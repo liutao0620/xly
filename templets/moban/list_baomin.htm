@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/metinfo_ui.css" id="metuimodule" data-module ="8" />
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/metinfo.css" />
+<script src="{dede:global.cfg_templets_skin/}/style/jQuery1.7.2.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/style/metinfo_ui.js" type="text/javascript"></script>
+<!--[if IE]>
+<script src="../public/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+
+{dede:include filename="head.htm"/}
+
+<div class="sidebar width center">
+    
+	{dede:include filename="left.htm"/}
+    <div class="sb_box fr">
+	    <div class="sb_box-box position">
+	    <h3 class="sb_box-title">
+			<div class="sb_box-wz fr position">当前位置：{dede:field name='position'/}&nbsp;</div>
+			<span>{dede:field.typename/}</span>
+		</h3>
+		</div>
+		<div class="clear"></div>
+
+        <div class="active" id="feedback">
+            <script language='javascript'>function Checkfeedback(){ if (document.myform.kcxz.value.length == 0) {
+				alert('课程选择 不能为空');
+				document.myform.kcxz.focus();
+				return false;}
+				if (document.myform.xxzz.value.length == 0) {
+				alert('家庭详细住址 不能为空');
+				document.myform.xxzz.focus();
+				return false;}
+				}
+			</script>
+			<form enctype='multipart/form-data' method='POST' name='myform' onSubmit='return Checkfeedback();' action='/plus/diy.php' target='_self'>
+			    <input type="hidden" name="action" value="post" />
+				<input type="hidden" name="diyid" value="1" />
+				<input type="hidden" name="do" value="2" />
+				<table class='feedback_table' >
+					<tr>
+						<td class='text'>课程选择</td>
+						<td class='input'><select name='kcxz'><option selected='selected' value=''>请选择</option><option value='七天体验营'>七天体验营</option><option value='十二天集训营'>十二天集训营</option><option value='二十天强化营'>二十天强化营</option><option value='二十八天特训营'>二十八天特训营</option><option value='九天航天军事营'>九天航天军事营</option></select><span class='info'>*</span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>姓名</td>
+						<td class='input'><input name='name' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>性别</td>
+						<td class='input'>
+						<select name='sex'>
+						<option selected='selected' value=''>请选择</option>
+						<option value='男'>男</option>
+						<option value='女'>女</option>
+						<option value='人妖'>人妖</option>
+						</select><span class='info'>
+							
+						</span><span></span>
+						</td>
+					</tr>
+					<tr>
+						<td class='text'>民族</td>
+						<td class='input'><input name='minzu' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>出生日期</td>
+						<td class='input'><input name='csrq' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>籍贯</td>
+						<td class='input'><input name='jg' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>身高</td>
+						<td class='input'><input name='sg' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>兴趣爱好</td>
+						<td class='input'><textarea name='xqah' class='textarea-text' cols='50' rows='5'></textarea><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>个人专长</td>
+						<td class='input'><textarea name='grzc' class='textarea-text' cols='50' rows='5'></textarea><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>家长最希望解决或纠正的问题</td>
+						<td class='input'><textarea name='jzwt' class='textarea-text' cols='50' rows='5'></textarea><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>其他问题</td>
+						<td class='input'><textarea name='qtwt' class='textarea-text' cols='50' rows='5'></textarea><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>监护人姓名</td>
+						<td class='input'><input name='jhrxm' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>工作单位</td>
+						<td class='input'><input name='gzdw' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>身份证号</td>
+						<td class='input'><input name='sfz' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>联系方式</td>
+						<td class='input'><input name='lxfs' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>24小时紧急电话</td>
+						<td class='input'><input name='jjdh' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>与营员关系</td>
+						<td class='input'><input name='yygx' type='text' size='30' class='input-text' /><span class='info'></span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'>家庭详细住址</td>
+						<td class='input'><input name='xxzz' type='text' size='30' class='input-text' /><span class='info'>*</span><span></span></td>
+					</tr>
+					<tr>
+						<td class='text'></td>
+						<td class='submint'>
+						<input type="hidden" name="dede_fields" value="kcxz,select;name,text;sex,select;minzu,text;csrq,text;jg,text;sg,float;xqah,multitext;grzc,multitext;jzwt,multitext;qtwt,multitext;jhrxm,text;gzdw,text;sfz,text;lxfs,text;jjdh,text;yygx,text;xxzz,text" />
+						<input type="hidden" name="dede_fieldshash" value="2333f53017299e2015a43a4f42208906" />
+						<input type='hidden' name='fdtitle' value='在线报名' />
+						<input type='hidden' name='lang' value='cn' />
+						<input type='hidden' name='ip' value='118.250.117.67' />
+						<input type='hidden' name='totnum' value='18' />
+						<input type='hidden' name='id' value='19' />
+						<input type='submit' name='submit' value='提交信息' class='submit button orange'></td>
+					</tr>
+					
+				</table>
+			</form>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+{dede:include filename="footer.htm"/}

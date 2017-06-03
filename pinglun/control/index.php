@@ -1,0 +1,1 @@
+<?php class index extends Control{	public function ac_index()	{	    echo "hello world";	}    public function ac_listusers()	{        $userModel = $this->Model('muser');        $users = $userModel->getUsers();        $GLOBALS['users'] = $users;        $this->SetTemplate('userlist.htm');        $this->Display();	}} ?>

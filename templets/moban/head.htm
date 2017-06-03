@@ -1,0 +1,117 @@
+<herder>
+     <div class="HER--top">
+	     <div class="HER--top-nav center width">
+		     <span>
+			     <a href='#' onclick='SetHome(this,window.location,"非IE浏览器不支持此功能，请手动设置！");' style='cursor:pointer;' title='设为首页'>设为首页
+			     </a>
+			     <a href='#' onclick='addFavorite("非IE浏览器不支持此功能，请手动设置！");' style='cursor:pointer;' title='收藏本站'  >收藏本站
+			     </a>
+		     </span>
+	     </div>
+     </div>
+	 <div class="HER--cen position">
+	      <div class="HER--cen-con width center position">
+
+		         <div class="logo fl">
+				 	<a href="{dede:global.cfg_basehost/}" title="{dede:global.cfg_webname/}" id="web_logo" target='_self'>
+						<img src="{dede:global.cfg_templets_skin/}/images/1370511204.png" alt="{dede:global.cfg_webname/}" title="{dede:global.cfg_webname/}" style="margin:30px 0px 0px 0px;" />
+					</a>
+			     </div>
+
+				 <div class="HER--search">
+					 <form method="POST" name="myform1" action="{dede:global.cfg_cmsurl/}/plus/search.php"  target="_self">
+						 <input type="hidden" name="lang" value='cn'/>&nbsp;
+						 <input type="hidden" name="searchtype" value='0'/>&nbsp;
+						 <span class='navsearch_input'>
+						     <input type="text" name="q" size='20'/>
+
+						 </span>&nbsp;
+						 <input type='submit' name='Submit' value='搜索' class="searchgo" />
+					 </form>
+				 </div>
+
+				 <div class="SEO">
+				     <p>
+			            <span style="font-size:12px;"><strong>&nbsp; &nbsp; 报名热线：{dede:global.cfg_tel/}</strong>
+			            </span>
+		             </p>
+	             </div>
+
+				 <div class="clear"></div>
+		  </div>
+	 </div>
+	 
+	<div class="HER--bot">
+		<nav class="width center">
+			<ul class="list-none">
+				<li id="nav_10001" style='width:134px;' class='navdown'>
+					<a href='{dede:global.cfg_basehost/}' title='网站首页' class='nav'>
+					<span>网站首页</span>
+				    </a>
+				</li>
+                {dede:channelartlist typeid='1,2,3,4' }
+		 		<li class="nav-line">	</li>
+		 		<li id='nav_1' style='width:133px;' >
+			 		<a href='{dede:field name='typeurl'/}'  title='{dede:field name='typename'/}' class='hover-none nav'>
+			 		    <span>{dede:field name='typename'/}</span>
+			 		</a>
+			 		<dl>
+                        {dede:channel  type='son' noself='yes'}
+				 		<dd>
+				 		<a href='[field:typelink/]' title='[field:typename/]' >[field:typename/]</a>
+				 		</dd>
+                        {/dede:channel}
+			 		</dl>
+		 		</li>
+                {/dede:channelartlist}
+		 		
+                {dede:type typeid='5'}
+		 		<li class="nav-line"></li>		 		
+		 		<li id='nav_4' style='width:133px;' >
+			 		<a href='[field:typelink/]'  title='[field:typename/]' class='hover-none nav'>
+			 			<span>[field:typename/]</span>
+			 		</a>
+			 		
+		 		</li>
+                {/dede:type}
+                {dede:type typeid='6'}
+		 		<li class="nav-line"></li>
+		 		<li id='nav_9' style='width:133px;' >
+			 		<a href='[field:typelink/]'  title='[field:typename/]' class='hover-none nav'>
+			 		    <span>[field:typename/]</span>
+			 		</a>
+		 		</li>
+		 		{/dede:type}
+		 	</ul>
+	 	</nav>
+	</div>
+
+
+	<div class="HER--ban center position">
+        <div class="HER-ban-TOP"></div>
+        <div class="HER-banner center">
+			<link href='{dede:global.cfg_templets_skin/}/style/css.css' rel='stylesheet' type='text/css' />
+			<script src='{dede:global.cfg_templets_skin/}/style/jquery.bxSlider.min.js'>	
+			</script>
+			<div class='flash flash6' style='width:990px; height:360px;'>
+				<ul id='slider6' class='list-none'>
+					<li>						
+						<img src='{dede:global.cfg_templets_skin/}/images/1370510275.jpg' alt='' width='990' height='360'>						
+					</li>
+					<li>						
+						<img src='{dede:global.cfg_templets_skin/}/images/1370510756.jpg' alt='' width='990' height='360'>						
+					</li>
+					<li>						
+						<img src='{dede:global.cfg_templets_skin/}/images/1370510263.jpg' alt='' width='990' height='360'>						
+					</li>
+					<li>						
+						<img src='{dede:global.cfg_templets_skin/}/images/1370511102.jpg' alt='' width='990' height='360'>						
+					</li>
+				</ul>
+			</div>
+			<script type='text/javascript'>$(document).ready(function(){ $('#slider6').bxSlider({ mode:'vertical',autoHover:true,auto:true,pager: true,pause: 5000,controls:false});});
+			</script>
+		</div>
+	</div>
+	<div class="HER-ban-BOT center"></div>
+</herder>

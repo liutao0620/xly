@@ -1,0 +1,426 @@
+html {
+	background: url("../images/BG.jpg"); font: 12px/1.8 "Microsoft YaHei", Tahoma, Verdana, "Simsun"; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal; -webkit-text-size-adjust: none;
+}
+body {
+	background: url("../images/BG.jpg"); font: 12px/1.8 "Microsoft YaHei", Tahoma, Verdana, "Simsun"; color: rgb(51, 51, 51); font-size-adjust: none; font-stretch: normal; -webkit-text-size-adjust: none;
+}
+a {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+a:hover {
+	color: rgb(0, 102, 51); text-decoration: none;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.center {
+	margin: 0px auto;
+}
+.position {
+	position: relative;
+}
+.width {
+	width: 1000px;
+}
+.HER--top {
+	background: url("../images/HER--top.jpg"); height: 22px;
+}
+.HER--top-nav {
+	height: 20px; line-height: 20px;
+}
+.HER--top-nav span {
+	margin-right: 30px; float: right;
+}
+.HER--top-nav a {
+	background: url("../images/HER--top-nav.jpg") no-repeat left 7px; color: rgb(255, 255, 255); padding-left: 10px; margin-left: 10px;
+}
+.HER--top-nav a:hover {
+	color: rgb(97, 97, 97);
+}
+.HER--cen {
+	background: url("../images/HER--cen.jpg");
+}
+.HER--cen-con {
+	min-height: 95px; _height: 95px;
+}
+.HER--search {
+	background: url("../images/HER--sousuo.jpg") no-repeat left top; width: 210px; height: 50px; right: 0px; bottom: 20px; position: absolute;
+}
+.HER--search form {
+	margin: 7px 0px 0px 5px;
+}
+* + html .HER--search form {
+	margin: 6px 0px 0px 5px;
+}
+.HER--search .searchgo {
+	border-color: rgb(27, 87, 49); padding: 0px 0px; color: rgb(255, 255, 255); background-color: rgb(27, 87, 49);
+}
+* + html .HER--search .searchgo {
+	padding: 0px 1px;
+}
+.SEO {
+	right: 30px; bottom: 0px; color: rgb(255, 255, 255); position: absolute;
+}
+.HER--bot {
+	background: url("../images/HER--bot.jpg"); height: 48px; margin-bottom: 15px;
+}
+.HER--bot li {
+	text-align: center; margin-top: 3px; float: left; position: relative; z-index: 101;
+}
+.HER--bot li a {
+	height: 45px; text-align: center; color: rgb(255, 255, 255); line-height: 45px; display: block; _overflow: hidden;
+}
+.HER--bot li > a {
+	overflow: hidden;
+}
+.HER--bot .hover a {
+	background: url("../images/nav.jpg") repeat-x; color: rgb(78, 78, 75);
+}
+.nav-line {
+	background: url("../images/line.jpg") no-repeat rgb(255, 255, 255); width: 11px; height: 45px;
+}
+.HER--bot dl {
+	left: 0px; top: 45px; display: none; position: absolute; z-index: 100;
+}
+.HER--bot dl dd {
+	height: 45px; line-height: 45px; border-bottom-color: rgb(0, 41, 17); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.HER--bot dl a {
+	background: rgb(255, 255, 255) !important; white-space: nowrap;
+}
+.HER--bot dl a:hover {
+	color: rgb(245, 179, 30);
+}
+.HER--ban {
+	background: url("../images/HER-ban-BG.png") no-repeat left bottom rgb(255, 255, 255); padding: 5px 0px; width: 1000px;
+}
+.HER-ban-TOP {
+	background: url("../images/HER-ban-TOP.png"); left: 0px; top: 0px; width: 1000px; height: 50px; position: absolute;
+}
+.HER-banner {
+	width: 990px !important; overflow: hidden; font-size: 0px;
+}
+.HER-ban-BOT {
+	background: url("../images/HER-ban-BOT.jpg") no-repeat top; width: 1000px; height: 15px;
+}
+.CON--title {
+	height: 35px; color: rgb(5, 71, 33); line-height: 34px; font-size: 16px; border-bottom-color: rgb(5, 71, 33); border-bottom-width: 2px; border-bottom-style: solid;
+}
+.CON--title .tubiao1 {
+	background: url("../images/tubiao1.jpg") no-repeat 2px 3px; padding: 0px 12px; height: 34px; margin-right: 10px; float: left;
+}
+.CON--title .tubiao2 {
+	background: url("../images/tubiao2.jpg") no-repeat 2px 2px; padding: 0px 12px; height: 34px; margin-right: 10px; float: left;
+}
+.CON--title .tubiao3 {
+	background: url("../images/tubiao3.jpg") no-repeat 5px 3px; padding: 0px 12px; height: 34px; margin-right: 10px; float: left;
+}
+.CON--title .tubiao4 {
+	background: url("../images/tubiao4.jpg") no-repeat 5px 2px; padding: 0px 12px; height: 34px; margin-right: 10px; float: left;
+}
+.CON--title .tubiao5 {
+	background: url("../images/tubiao5.jpg") no-repeat 5px 2px; padding: 0px 12px; height: 34px; margin-right: 10px; float: left;
+}
+.CON--title .tubiao6 {
+	background: url("../images/tubiao6.jpg") no-repeat 5px 2px; padding: 0px 13px; height: 34px; margin-right: 10px; float: left;
+}
+.CON--title-more {
+	padding: 0px 5px; top: 10px; height: 15px; right: 0px; color: rgb(5, 71, 33); line-height: 15px; font-size: 10px; position: absolute;
+}
+.CON--top {
+	margin-top: 5px;
+}
+.CON--top-l {
+	margin-bottom: 10px;
+}
+.CON--top-r {
+	margin-bottom: 10px;
+}
+.CON--top-pd {
+	padding: 5px;
+}
+.CON--top-rnr {
+	padding-top: 15px;
+}
+.CON--top-l {
+	width: 660px;
+}
+.CON--top-r {
+	width: 320px;
+}
+.CON--top-rs {
+	width: 310px; float: left;
+}
+.CON--top-rs dd h2 {
+	height: 30px; line-height: 30px; overflow: hidden;
+}
+.CON--top-rs dd p {
+	overflow: hidden;
+}
+.CON--top-rs dd a {
+	color: rgb(51, 51, 51);
+}
+.CON--top-rs dd a:hover {
+	color: rgb(102, 102, 102);
+}
+.CON--top-rx {
+	background: url("../images/CON--top-jt.gif") no-repeat left 2px; height: 30px; line-height: 30px; overflow: hidden; padding-left: 10px; display: block;
+}
+.CON--cen {
+	margin-bottom: 20px;
+}
+.CON--cen-pd {
+	padding: 10px;
+}
+.CON--cen-pd2 {
+	padding: 10px 20px;
+}
+.CON--cen-pd3 {
+	padding: 20px 50px; min-height: 150px;
+}
+.CON--cen-l {
+	background: url("../images/CON--cen-cen.jpg") repeat-y; width: 320px; padding-top: 2px;
+}
+.CON--cen-c {
+	background: url("../images/CON--cen-cen.jpg") repeat-y; width: 320px; padding-top: 2px;
+}
+.CON--cen-r {
+	background: url("../images/CON--cen-cen.jpg") repeat-y; width: 320px; padding-top: 2px;
+}
+.CON--cen-c {
+	margin-left: 20px;
+}
+.CON--cen-listel li {
+	background: url("../images/CON--cen-jt.gif") no-repeat left 12px; margin: 0px 5px; height: 30px; line-height: 30px; overflow: hidden; padding-left: 13px;
+}
+.CON--cen-listel li a {
+	margin-right: 5px; -ms-zoom: 1;
+}
+.CON--cen-listel li span {
+	color: rgb(102, 102, 102); float: right;
+}
+.CON--cen-cnr {
+	font-size: 0px;
+}
+.CON--cen-cnr img {
+	border: 1px solid rgb(204, 204, 204); border-image: none;
+}
+.CON--cen-top {
+	background: url("../images/CON--cen-top.jpg"); top: 0px; width: 320px; height: 2px; position: absolute; _background: url(../CON--cen-top.jpg) no-repeat;
+}
+.CON--cen-pot {
+	background: url("../images/CON--cen-bot.jpg"); width: 320px; height: 2px; bottom: 0px; position: absolute; _background: url(../CON--cen-bot.jpg) no-repeat top bottom;
+}
+.CON--bot {
+	background: url("../images/CON--bot-cen.jpg") repeat-y; padding-top: 2px; margin-bottom: 20px;
+}
+.CON--bot-top {
+	background: url("../images/CON--bot-top.jpg"); top: 0px; width: 1000px; height: 2px; position: absolute; _background: url(../CON--bot-top.jpg) no-repeat;
+}
+.CON--bot-pot {
+	background: url("../images/CON--bot-bot.jpg"); width: 1000px; height: 2px; bottom: 0px; position: absolute; _background: url(../CON--bot-bot.jpg) no-repeat top bottom;
+}
+.CON--bot .profld {
+	margin: 0px; overflow: hidden; position: relative;
+}
+.CON--bot h3 span {
+	float: left;
+}
+.CON--bot ol {
+	width: 2012em; position: absolute;
+}
+.CON--bot ol li {
+	text-align: center; float: left;
+}
+.CON--bot ol li a.img {
+	text-align: center; font-size: 0px; display: block;
+}
+.CON--bot ol li a.img img {
+	margin: auto; border: 1px solid rgb(214, 214, 214); border-image: none;
+}
+.CON--bot ol li h3 {
+	height: 20px; line-height: 20px; overflow: hidden; font-weight: normal; margin-top: 5px;
+}
+.CON--bot .flip {
+	top: 45px; width: 70px; height: 168px; float: left; position: absolute; z-index: 100;
+}
+* html .CON--bot .flip {
+	width: 70px;
+}
+* + html .CON--bot .flip {
+	width: 70px;
+}
+.CON--bot .next {
+	background: url("../images/CON--bot-jt.jpg") no-repeat; width: 35px; height: 168px;
+}
+.CON--bot .prev {
+	background: url("../images/CON--bot-jt.jpg") no-repeat; width: 35px; height: 168px;
+}
+.CON--bot .next {
+	background-position: -35px 0px; left: 960px; float: right; position: absolute;
+}
+.CON--bot .prev {
+	background-position: 0px 0px; left: 5px; float: left; position: absolute;
+}
+#trigger {
+	display: none;
+}
+#trigger {
+	bottom: 8px; margin-top: 0px; margin-right: 5px; float: left; position: relative; -ms-zoom: 1;
+}
+#trigger a {
+	background: url("../images/CON--bot-jt.gif") no-repeat -78px -10px; width: 8px; height: 8px; overflow: hidden; font-size: 0px; margin-right: 5px; display: inline-block;
+}
+#trigger a.current {
+	background-position: -78px 0px;
+}
+.URL {
+	background: url("../images/URL--top.jpg") no-repeat left top rgb(255, 255, 255);
+}
+.URL--url {
+	background: url("../images/URL--bot.jpg") no-repeat left bottom; padding: 5px;
+}
+.URL--url-url {
+	background: rgb(238, 238, 238); width: 990px; padding-bottom: 20px;
+}
+.URL--title {
+	width: 940px; height: 40px; border-bottom-color: rgb(102, 102, 102); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.URL--title span {
+	background: url("../images/link.png") no-repeat left; left: 0px; bottom: 3px; padding-left: 25px; font-size: 14px; position: absolute;
+}
+.URL--title a {
+	right: 0px; bottom: 3px; font-size: 10px; position: absolute;
+}
+.URL--TUimg {
+	width: 960px;
+}
+.URL--WBtxt {
+	width: 960px;
+}
+.URL ul li {
+	margin: 5px 0px 0px 30px; float: left; white-space: nowrap; _margin-left: 15px;
+}
+footer {
+	background: url("../images/FOOT--BG.jpg") repeat-x left top; padding: 25px 0px; text-align: center; color: rgb(255, 255, 255); margin-top: 20px;
+}
+footer a {
+	color: rgb(255, 255, 255);
+}
+footer a:hover {
+	color: rgb(255, 255, 0);
+}
+.foot-text {
+	margin-top: 5px;
+}
+.sidebar {
+	margin-top: 5px;
+}
+.sb_nav {
+	width: 205px; margin-bottom: 20px;
+}
+.sb_nav-top {
+	background: url("../images/sb_nav-top.gif") repeat-y; padding-top: 30px;
+}
+.sb_nav-title {
+	background: url("../images/sb_nav-title.jpg") no-repeat left; height: 42px; text-align: center; overflow: hidden; display: block; white-space: nowrap; _width: 205px;
+}
+.sb_nav-title span {
+	color: rgb(255, 255, 255); line-height: 39px; font-size: 15px;
+}
+.sb_nav-nr {
+	padding: 20px 0px 20px 24px;
+}
+.sb_nav-nr a {
+	background: url("../images/sub_19.jpg") no-repeat left; width: 157px; height: 30px; text-align: center; color: rgb(0, 48, 21); line-height: 30px; overflow: hidden; font-weight: bold; margin-bottom: 10px; display: block; white-space: nowrap;
+}
+.sb_nav-nr a:hover {
+	background: url("../images/sub_16.jpg") no-repeat left; color: rgb(102, 102, 102);
+}
+.sb_nav-bot {
+	background: url("../images/sb_nav-bot.gif"); height: 110px;
+}
+.sb_us-top {
+	background: url("../images/sb_us-top.jpg") no-repeat left; height: 45px;
+}
+.sb_us-cen {
+	background: url("../images/sb_us-cen.jpg") repeat-y;
+}
+.sb_us-wb {
+	margin: 0px 10px 0px 15px; color: rgb(255, 255, 255);
+}
+.sb_us-pot {
+	background: url("../images/sb_us-pot.jpg") no-repeat left bottom; height: 10px;
+}
+.sb_box {
+	width: 750px;
+}
+.sb_box-box {
+	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 4px; border-bottom-style: solid;
+}
+.sb_box-title {
+	height: 30px; color: rgb(0, 48, 21); line-height: 30px;
+}
+.sb_box-title span {
+	overflow: hidden; font-size: 18px; border-bottom-color: rgb(32, 93, 59); border-bottom-width: 4px; border-bottom-style: solid; float: left; white-space: nowrap; max-width: 250px; _position: absolute; _top: 0px;
+}
+.sb_box-wz {
+	text-align: right; overflow: hidden; border-bottom-color: rgb(32, 93, 59); border-bottom-width: 4px; border-bottom-style: solid; white-space: nowrap; max-width: 450px; _position: absolute; _top: 0px; _right: 0px;
+}
+.searchnavlist select {
+	width: 160px; overflow: hidden; white-space: nowrap;
+}
+.searchnavlist input {
+	width: 150px;
+}
+.main_deng form label {
+	position: relative;
+}
+#newslist li p {
+	color: rgb(119, 119, 119);
+}
+* + html .main_deng form label img {
+	top: 0px; right: -5px; position: absolute;
+}
+.rslides {
+	list-style: none; padding: 0px; left: 0px; width: 100%; position: absolute;
+}
+* + html .rslides {
+	left: -40px;
+}
+.rslides_nav {
+	background: url("../images/i.png") no-repeat 0px 0px; left: -20px; top: 50%; width: 17px; height: 51px; text-indent: -9999px; overflow: hidden; text-decoration: none; margin-top: -20px; position: absolute; opacity: 0.5; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rslides_nav:active {
+	opacity: 1;
+}
+.next.rslides_nav {
+	background-position: -17px 0px; left: auto; right: -20px;
+}
+.f426x240 {
+	overflow: hidden;
+}
+.rslides_tabs {
+	margin: 0px auto; height: 7px; text-align: center; -ms-zoom: 1;
+}
+* + html .rslides_tabs {
+	margin-top: 7px; margin-left: 80px;
+}
+.rslides_tabs li {
+	height: 7px; line-height: 7px; margin-right: 5px; float: none; display: inline-block; _float: left;
+}
+.rslides_tabs a {
+	background: rgb(221, 221, 221); width: 7px; height: 7px; text-indent: -9999px; overflow: hidden; display: inline-block; _display: block;
+}
+.rslides_tabs .rslides_here a {
+	background: rgb(4, 174, 244);
+}
+.focus {
+	margin: 15px auto; position: relative;
+}
+.rslides_tabs {
+	display: none;
+}
